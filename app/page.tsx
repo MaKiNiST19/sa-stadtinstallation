@@ -21,6 +21,7 @@ import {
 } from "@/lib/schema";
 import SchemaJsonLd from "@/components/SchemaJsonLd";
 import OrbitBrands from "@/components/OrbitBrands";
+import PhoneIcon from "@/components/PhoneIcon";
 import BrandCarousel from "@/components/foundations/BrandCarousel";
 import FaqSection from "@/components/content/FaqSection";
 import CtaBand from "@/components/content/CtaBand";
@@ -62,7 +63,8 @@ export default function HomePage() {
           </p>
 
           <div className="hero__actions">
-            <a href={`tel:${FIRMA.telephone}`} className="btn-outline btn-outline--white">
+            <a href={`tel:${FIRMA.telephone}`} className="btn-outline btn-outline--white btn-with-icon">
+              <PhoneIcon />
               Jetzt anrufen
             </a>
             <a href="/leistungen" className="btn-outline">

@@ -9,6 +9,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import HighlightBox from "@/components/content/HighlightBox";
 import FeaturedSnippet from "@/components/content/FeaturedSnippet";
 import EntityCard from "@/components/content/EntityCard";
+import PhoneIcon from "@/components/PhoneIcon";
 
 export const metadata: Metadata = {
   title: `Kontakt – Installateur Wien anrufen | ${FIRMA.name}`,
@@ -59,13 +60,9 @@ export default function KontaktPage() {
             erreichen Sie einen unserer Installateure – auch nachts und am Wochenende.
           </p>
           <div style={{ display: "flex", gap: "14px", marginTop: "32px", flexWrap: "wrap" }}>
-            <a href={`tel:${FIRMA.telephone}`} className="btn-sparkle">
-              <span
-                className="text_button"
-                style={{ padding: "14px 28px", fontSize: "15px", fontWeight: 800 }}
-              >
-                📞 {FIRMA.telephoneDisplay}
-              </span>
+            <a href={`tel:${FIRMA.telephone}`} className="btn-outline btn-outline--white btn-with-icon">
+              <PhoneIcon />
+              Jetzt anrufen
             </a>
             <a href={`mailto:${FIRMA.email}`} className="btn-outline">✉ {FIRMA.email}</a>
           </div>

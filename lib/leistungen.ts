@@ -28,7 +28,7 @@ export const LEISTUNGEN: Leistung[] = [
     description:
       "24h Notfall-Installateur Wien – Rohrbruch, Wasserschaden, Gasgeruch oder defekte Therme? In 30 Minuten vor Ort, geprüfter Meisterbetrieb.",
     tagline: "Rohrbruch, Wasserschaden oder Gasalarm – wir sind in 30 Minuten bei Ihnen.",
-    image: "/images/leistungen/notfall.jpg",
+    image: "/images/leistungen/notfall-installateur-wien.jpg",
     icon: "🚨",
     emergency: true,
     priceHint: "Anfahrt pauschal, Fixpreis vor Arbeitsbeginn",
@@ -71,7 +71,7 @@ export const LEISTUNGEN: Leistung[] = [
     description:
       "Konzessionierter Gas-Installateur in Wien: Gasleitung verlegen, Gastherme montieren, Dichtheitsprüfung & Gebrechen. Meisterbetrieb mit WKÖ-Konzession.",
     tagline: "Konzessionierte Gasarbeiten nach ÖVGW-Richtlinien – sicher, dokumentiert, abnahmefähig.",
-    image: "/images/leistungen/gas.jpg",
+    image: "/images/leistungen/gas-installateur-wien.jpg",
     icon: "🔥",
     priceHint: "Festpreis-Angebot nach Vor-Ort-Termin",
     keywords: [
@@ -110,7 +110,7 @@ export const LEISTUNGEN: Leistung[] = [
     description:
       "Wasserinstallateur Wien: Rohrbruch beheben, Wasserleitung tauschen, Armaturen montieren. Altbau-Spezialist, 24h Notdienst, Fixpreis.",
     tagline: "Vom tropfenden Wasserhahn bis zum kompletten Leitungsneubau – alles aus einer Hand.",
-    image: "/images/leistungen/wasser.jpg",
+    image: "/images/leistungen/wasserinstallateur-wien.jpg",
     icon: "💧",
     priceHint: "Stundensatz transparent, Festpreis für geplante Arbeiten",
     keywords: [
@@ -149,7 +149,7 @@ export const LEISTUNGEN: Leistung[] = [
     description:
       "Heizungstechnik in Wien: Gastherme, Wärmepumpe, Fernwärme-Anschluss, hydraulischer Abgleich. Planung, Montage & Wartung vom Meisterbetrieb.",
     tagline: "Effiziente Heizsysteme – von der hydraulischen Planung bis zur Inbetriebnahme.",
-    image: "/images/leistungen/heizung.jpg",
+    image: "/images/leistungen/heizungstechnik-wien.jpg",
     icon: "🔆",
     priceHint: "Förderberatung (Wien & Bund) inklusive",
     keywords: [
@@ -188,7 +188,7 @@ export const LEISTUNGEN: Leistung[] = [
     description:
       "Sanitärtechnik Wien: komplette Badsanierung, barrierefreies Bad, WC-Tausch, Duschumbau. Planung bis Endmontage aus einer Hand.",
     tagline: "Vom alten Altbau-Bad zur modernen Wellness-Oase – alles aus einer Hand.",
-    image: "/images/leistungen/sanitaer.jpg",
+    image: "/images/leistungen/sanitaertechnik-wien.jpg",
     icon: "🛁",
     priceHint: "Komplett-Festpreis inkl. Material & Entsorgung",
     keywords: [
@@ -227,7 +227,7 @@ export const LEISTUNGEN: Leistung[] = [
     description:
       "Thermenwartung in Wien: jährliche Wartung, Reinigung & Abgasmessung nach ÖNORM B 8131. Alle Marken – Viessmann, Vaillant, Junkers, Bosch.",
     tagline: "Jährliche Wartung nach ÖNORM B 8131 – sicher, effizient, dokumentiert.",
-    image: "/images/leistungen/therme.jpg",
+    image: "/images/leistungen/thermenwartung-wien.jpg",
     icon: "⚙️",
     priceHint: "Festpreis für Wartung inkl. Abgasmessung",
     keywords: [
@@ -266,7 +266,7 @@ export const LEISTUNGEN: Leistung[] = [
     description:
       "Verstopfung in Wien schnell beheben: WC, Abfluss, Dusche, Küchenspüle. Mit Spirale, Hochdruckspülung oder Kamerainspektion. 24h.",
     tagline: "Verstopfte Leitungen mit Spirale, Hochdruck oder Kamera – schnell, sauber, spurlos.",
-    image: "/images/leistungen/verstopfung.jpg",
+    image: "/images/leistungen/verstopfung-wien.jpg",
     icon: "🌀",
     emergency: true,
     priceHint: "Fixpreis nach Diagnose, keine Überraschungen",

@@ -1,5 +1,7 @@
+import Image from "next/image";
 import { FIRMA } from "@/lib/company";
 import { LEISTUNGEN } from "@/lib/leistungen";
+import PhoneIcon from "@/components/PhoneIcon";
 
 export default function NotFound() {
   return (
@@ -35,13 +37,9 @@ export default function NotFound() {
           </p>
           <div style={{ display: "flex", gap: "14px", marginTop: "32px", flexWrap: "wrap" }}>
             <a href="/" className="btn-outline">Zur Startseite</a>
-            <a href={`tel:${FIRMA.telephone}`} className="btn-sparkle">
-              <span
-                className="text_button"
-                style={{ padding: "14px 28px", fontSize: "15px", fontWeight: 800 }}
-              >
-                📞 {FIRMA.telephoneDisplay}
-              </span>
+            <a href={`tel:${FIRMA.telephone}`} className="btn-outline btn-outline--white btn-with-icon">
+              <PhoneIcon />
+              Jetzt anrufen
             </a>
           </div>
         </div>
@@ -53,8 +51,8 @@ export default function NotFound() {
           <div className="services-grid" style={{ marginTop: "32px" }}>
             {LEISTUNGEN.map((l) => (
               <a key={l.slug} href={`/leistungen/${l.slug}`} className="service-magic-card">
-                <div className="service-magic-card__icon" aria-hidden="true">
-                  <span style={{ fontSize: "32px" }}>{l.icon}</span>
+                <div className="service-magic-card__img">
+                  <Image src={l.image} alt={l.shortTitle} fill sizes="(max-width: 960px) 50vw, 33vw" style={{ objectFit: "cover" }} />
                 </div>
                 <h3 className="service-magic-card__title">{l.shortTitle}</h3>
                 <p className="service-magic-card__text">{l.description}</p>

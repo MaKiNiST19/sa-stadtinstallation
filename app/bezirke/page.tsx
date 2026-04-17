@@ -12,6 +12,7 @@ import CtaBand from "@/components/content/CtaBand";
 import HighlightBox from "@/components/content/HighlightBox";
 import FeaturedSnippet from "@/components/content/FeaturedSnippet";
 import IconList from "@/components/content/IconList";
+import PhoneIcon from "@/components/PhoneIcon";
 
 export const metadata: Metadata = {
   title: `Installateur in allen 23 Wiener Bezirken | ${FIRMA.name}`,
@@ -71,13 +72,9 @@ export default function BezirkePage() {
             Bezirk mit lokaler Einsatzseite, typischen Problemen und direktem Kontakt.
           </p>
           <div style={{ display: "flex", gap: "14px", marginTop: "32px", flexWrap: "wrap" }}>
-            <a href={`tel:${FIRMA.telephone}`} className="btn-sparkle">
-              <span
-                className="text_button"
-                style={{ padding: "14px 28px", fontSize: "15px", fontWeight: 800 }}
-              >
-                📞 {FIRMA.telephoneDisplay}
-              </span>
+            <a href={`tel:${FIRMA.telephone}`} className="btn-outline btn-outline--white btn-with-icon">
+              <PhoneIcon />
+              Jetzt anrufen
             </a>
             <a href="/leistungen" className="btn-outline">7 Leistungen ansehen</a>
           </div>

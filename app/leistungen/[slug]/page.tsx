@@ -10,8 +10,10 @@ import {
   generateBreadcrumbSchema,
   combineSchemas,
 } from "@/lib/schema";
+import Image from "next/image";
 import SchemaJsonLd from "@/components/SchemaJsonLd";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import PhoneIcon from "@/components/PhoneIcon";
 import FaqSection from "@/components/content/FaqSection";
 import CtaBand from "@/components/content/CtaBand";
 import HighlightBox from "@/components/content/HighlightBox";
@@ -111,15 +113,36 @@ export default async function LeistungPage({ params }: { params: Promise<{ slug:
             {l.tagline}
           </p>
           <div style={{ display: "flex", gap: "14px", marginTop: "32px", flexWrap: "wrap" }}>
-            <a href={`tel:${FIRMA.telephone}`} className="btn-sparkle">
-              <span
-                className="text_button"
-                style={{ padding: "14px 28px", fontSize: "15px", fontWeight: 800 }}
-              >
-                📞 {FIRMA.telephoneDisplay}
-              </span>
+            <a href={`tel:${FIRMA.telephone}`} className="btn-outline btn-outline--white btn-with-icon">
+              <PhoneIcon />
+              Jetzt anrufen
             </a>
             <a href="/kontakt" className="btn-outline">Termin anfragen</a>
+          </div>
+        </div>
+      </section>
+
+      {/* Cover image below page title */}
+      <section style={{ background: "var(--bg)", padding: "40px 0 0" }}>
+        <div className="container">
+          <div
+            style={{
+              position: "relative",
+              width: "100%",
+              aspectRatio: "21 / 9",
+              borderRadius: "16px",
+              overflow: "hidden",
+              boxShadow: "0 12px 40px rgba(11,79,156,0.12)",
+            }}
+          >
+            <Image
+              src={l.image}
+              alt={l.shortTitle}
+              fill
+              sizes="(max-width: 1200px) 100vw, 1200px"
+              style={{ objectFit: "cover" }}
+              priority
+            />
           </div>
         </div>
       </section>
@@ -154,13 +177,13 @@ export default async function LeistungPage({ params }: { params: Promise<{ slug:
       {/* Main content - handwritten, not auto-generated */}
       {content ? (
         <section style={{ padding: "80px 0", background: "white" }}>
-          <div className="container" style={{ maxWidth: "820px" }}>
+          <div className="container">
             {content}
           </div>
         </section>
       ) : (
         <section style={{ padding: "80px 0", background: "white" }}>
-          <div className="container" style={{ maxWidth: "820px" }}>
+          <div className="container">
             <FeaturedSnippet
               question={`Was ist ${l.shortTitle} und wen betrifft es?`}
               answer={
@@ -227,8 +250,14 @@ export default async function LeistungPage({ params }: { params: Promise<{ slug:
                   href={`/leistungen/${r!.slug}`}
                   className="service-magic-card"
                 >
-                  <div className="service-magic-card__icon" aria-hidden="true">
-                    <span style={{ fontSize: "32px" }}>{r!.icon}</span>
+                  <div className="service-magic-card__img">
+                    <Image
+                      src={r!.image}
+                      alt={r!.shortTitle}
+                      fill
+                      sizes="(max-width: 960px) 50vw, 33vw"
+                      style={{ objectFit: "cover" }}
+                    />
                   </div>
                   <h3 className="service-magic-card__title">{r!.shortTitle}</h3>
                   <p className="service-magic-card__text">{r!.description}</p>

@@ -8,6 +8,7 @@ import { BEZIRKE } from "@/lib/bezirke";
 import { generateOrganizationSchema } from "@/lib/schema";
 import FooterBadge from "@/components/FooterBadge";
 import MobileNav from "@/components/MobileNav";
+import PhoneIcon from "@/components/PhoneIcon";
 import MobileStickyBar from "@/components/MobileStickyBar";
 import SchemaJsonLd from "@/components/SchemaJsonLd";
 
@@ -130,10 +131,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <MobileNav />
                 <a href={`tel:${FIRMA.telephone}`} className="btn-sparkle desktop-only">
                   <span
-                    className="text_button"
+                    className="text_button btn-with-icon"
                     style={{ padding: "10px 20px", fontSize: "14px", fontWeight: 800 }}
                   >
-                    📞 24h Notdienst
+                    <PhoneIcon size={15} />
+                    24h Notdienst
                   </span>
                 </a>
               </div>

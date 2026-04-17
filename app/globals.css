@@ -824,6 +824,12 @@ p  { color: var(--mid); line-height: 1.75; }
 
 .btn--lg { padding: 14px 30px; font-size: 15px; }
 
+.btn-with-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .btn-outline--white {
   background: #ffffff;
   color: var(--dark);

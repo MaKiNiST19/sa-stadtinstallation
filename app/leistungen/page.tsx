@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { FIRMA } from "@/lib/company";
 import { LEISTUNGEN } from "@/lib/leistungen";
 import {
@@ -63,8 +64,8 @@ export default function LeistungenPage() {
           <div className="services-grid" style={{ marginTop: "48px" }}>
             {LEISTUNGEN.map((l) => (
               <a key={l.slug} href={`/leistungen/${l.slug}`} className="service-magic-card">
-                <div className="service-magic-card__icon" aria-hidden="true">
-                  <span style={{ fontSize: "40px" }}>{l.icon}</span>
+                <div className="service-magic-card__img">
+                  <Image src={l.image} alt={l.shortTitle} fill sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 33vw" style={{ objectFit: "cover" }} />
                 </div>
                 <h2 className="service-magic-card__title">{l.shortTitle}</h2>
                 <p className="service-magic-card__text">{l.description}</p>

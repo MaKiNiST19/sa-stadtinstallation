@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { LEISTUNGEN } from "@/lib/leistungen";
 import { FIRMA } from "@/lib/company";
+import PhoneIcon from "@/components/PhoneIcon";
 
 export default function MobileNav() {
   const [open, setOpen] = useState(false);
@@ -176,7 +177,7 @@ export default function MobileNav() {
               style={{ width: "100%", justifyContent: "center" }}
             >
               <span
-                className="text_button"
+                className="text_button btn-with-icon"
                 style={{
                   width: "100%",
                   justifyContent: "center",
@@ -184,7 +185,8 @@ export default function MobileNav() {
                   fontSize: "14px",
                 }}
               >
-                📞 {FIRMA.telephoneDisplay}
+                <PhoneIcon />
+                {FIRMA.telephoneDisplay}
               </span>
             </a>
           </div>

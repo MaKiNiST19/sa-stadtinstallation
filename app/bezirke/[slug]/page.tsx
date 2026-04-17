@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { FIRMA } from "@/lib/company";
 import { BEZIRKE, getBezirk, BEZIRK_SLUGS } from "@/lib/bezirke";
@@ -12,6 +13,7 @@ import {
 } from "@/lib/schema";
 import SchemaJsonLd from "@/components/SchemaJsonLd";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import PhoneIcon from "@/components/PhoneIcon";
 import FaqSection from "@/components/content/FaqSection";
 import CtaBand from "@/components/content/CtaBand";
 import HighlightBox from "@/components/content/HighlightBox";
@@ -99,13 +101,9 @@ export default async function BezirkPage({ params }: { params: Promise<{ slug: s
             {b.intro}
           </p>
           <div style={{ display: "flex", gap: "14px", marginTop: "32px", flexWrap: "wrap" }}>
-            <a href={`tel:${FIRMA.telephone}`} className="btn-sparkle">
-              <span
-                className="text_button"
-                style={{ padding: "14px 28px", fontSize: "15px", fontWeight: 800 }}
-              >
-                📞 {FIRMA.telephoneDisplay}
-              </span>
+            <a href={`tel:${FIRMA.telephone}`} className="btn-outline btn-outline--white btn-with-icon">
+              <PhoneIcon />
+              Jetzt anrufen
             </a>
             <a href="/kontakt" className="btn-outline">Termin anfragen</a>
           </div>
@@ -216,8 +214,14 @@ export default async function BezirkPage({ params }: { params: Promise<{ slug: s
                 href={`/bezirke/${b.slug}/${l.slug}`}
                 className="service-magic-card"
               >
-                <div className="service-magic-card__icon" aria-hidden="true">
-                  <span style={{ fontSize: "32px" }}>{l.icon}</span>
+                <div className="service-magic-card__img">
+                  <Image
+                    src={l.image}
+                    alt={l.shortTitle}
+                    fill
+                    sizes="(max-width: 960px) 50vw, 33vw"
+                    style={{ objectFit: "cover" }}
+                  />
                 </div>
                 <h3 className="service-magic-card__title">
                   {l.shortTitle} in {b.shortName}
