@@ -1300,6 +1300,45 @@ p  { color: var(--mid); line-height: 1.75; }
   line-height: 1.7;
 }
 
+/*    Trust-Badges Prefooter    */
+.trust-badges {
+  background: white;
+  border-top: 1px solid rgba(11, 79, 156, 0.08);
+  border-bottom: 1px solid rgba(11, 79, 156, 0.08);
+  padding: 40px 0;
+}
+.trust-badges__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.trust-badges__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  flex: 0 1 auto;
+  filter: grayscale(0);
+  opacity: 0.95;
+  transition: opacity 0.2s ease;
+}
+.trust-badges__item:hover {
+  opacity: 1;
+}
+@media (max-width: 640px) {
+  .trust-badges {
+    padding: 28px 0;
+  }
+  .trust-badges__row {
+    gap: 20px;
+  }
+  .trust-badges__item {
+    height: 64px;
+  }
+}
+
 /*    Footer    */
 .footer { background: var(--dark); color: rgba(255,255,255,.55); padding: 56px 0 32px; }
 .footer-noe-link {

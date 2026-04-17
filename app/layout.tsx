@@ -11,6 +11,7 @@ import MobileNav from "@/components/MobileNav";
 import PhoneIcon from "@/components/PhoneIcon";
 import MobileStickyBar from "@/components/MobileStickyBar";
 import SchemaJsonLd from "@/components/SchemaJsonLd";
+import TrustBadges from "@/components/TrustBadges";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -146,6 +147,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
 
         <MobileStickyBar />
+
+        <TrustBadges />
 
         <footer
           className="footer"
