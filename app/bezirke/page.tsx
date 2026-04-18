@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { FIRMA } from "@/lib/company";
 import { BEZIRKE } from "@/lib/bezirke";
 import { LEISTUNGEN } from "@/lib/leistungen";
@@ -92,7 +92,7 @@ export default function BezirkePage() {
             answer={
               <p>
                 In allen 23 Wiener Gemeindebezirken – von 1010 Innere Stadt bis 1230 Liesing.
-                Unser Firmensitz liegt in der Humboldtgasse 33/1/29, 1100 Wien (Favoriten).
+                Unser Firmensitz liegt in der Puchsbaumgasse 39a, A-1100 Wien (Favoriten).
                 Von dort erreichen wir die Innenbezirke in 15–30 Minuten, Außenbezirke in
                 30–60 Minuten. Notfälle priorisieren wir unabhängig vom Bezirk – 24 Stunden,
                 365 Tage im Jahr.

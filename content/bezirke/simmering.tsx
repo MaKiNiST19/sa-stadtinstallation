@@ -1,4 +1,4 @@
-import FeaturedSnippet from "@/components/content/FeaturedSnippet";
+﻿import FeaturedSnippet from "@/components/content/FeaturedSnippet";
 import HighlightBox from "@/components/content/HighlightBox";
 import IconList from "@/components/content/IconList";
 import EntityCard from "@/components/content/EntityCard";
@@ -92,7 +92,7 @@ export default (
 
     <h2 style={{ marginTop: "48px" }}>Anfahrt nach Simmering</h2>
     <p style={{ fontSize: "16px", lineHeight: 1.75, color: "var(--mid)" }}>
-      Von der Humboldtgasse 1100 fahren wir über Gudrunstraße oder
+      Von der Puchsbaumgasse 1100 fahren wir über Gudrunstraße oder
       Simmeringer Hauptstraße – 10–15 Minuten normal, in Ferien manchmal
       unter 10 Minuten. Für Einfamilienhaus-Kunden am Stadtrand ist das
       einer der schnellsten Anfahrtswege, die wir in Wien haben.

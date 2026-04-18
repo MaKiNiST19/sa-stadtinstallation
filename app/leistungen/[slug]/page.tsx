@@ -257,7 +257,7 @@ export default async function LeistungPage({ params }: { params: Promise<{ slug:
           <h2 className="section-title">Das passt dazu</h2>
           <div
             className="services-grid"
-            style={{ gridTemplateColumns: "repeat(3, 1fr)", marginTop: "32px" }}
+            style={{ marginTop: "32px" }}
           >
             {l.relatedServices
               .map((s) => LEISTUNGEN.find((x) => x.slug === s))

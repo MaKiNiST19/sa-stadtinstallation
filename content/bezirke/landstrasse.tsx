@@ -1,4 +1,4 @@
-import FeaturedSnippet from "@/components/content/FeaturedSnippet";
+﻿import FeaturedSnippet from "@/components/content/FeaturedSnippet";
 import HighlightBox from "@/components/content/HighlightBox";
 import IconList from "@/components/content/IconList";
 import EntityCard from "@/components/content/EntityCard";
@@ -88,7 +88,7 @@ export default (
 
     <h2 style={{ marginTop: "48px" }}>Anfahrt ins Landstraße</h2>
     <p style={{ fontSize: "16px", lineHeight: 1.75, color: "var(--mid)" }}>
-      Von unserem Sitz in der Humboldtgasse (1100 Favoriten) sind wir in 15–25 Minuten
+      Von unserem Sitz in der Puchsbaumgasse (1100 Favoriten) sind wir in 15–25 Minuten
       im 3. Bezirk – je nach Tageszeit. Die Anbindung über den Landstraßer Gürtel und
       die A23 macht 1030 zu einem der am schnellsten erreichbaren Bezirke für uns.
     </p>

@@ -1,4 +1,4 @@
-import FeaturedSnippet from "@/components/content/FeaturedSnippet";
+﻿import FeaturedSnippet from "@/components/content/FeaturedSnippet";
 import HighlightBox from "@/components/content/HighlightBox";
 import IconList from "@/components/content/IconList";
 import MiniStory from "@/components/content/MiniStory";
@@ -45,7 +45,7 @@ export default (
       outcome="Fallstrang über Dach gereinigt, Problem binnen 90 Minuten behoben, keine Kanalkamera notwendig."
     >
       Mehrere Mieter meldeten am Sonntagabend rückgestautes WC. Wir fuhren
-      ab Humboldtgasse 33 in 12 Minuten hin, identifizierten Fettablagerungen
+      ab Puchsbaumgasse 39a in 12 Minuten hin, identifizierten Fettablagerungen
       im Fallstrang (klassisches Sonntagabend-Phänomen nach Mittagessen).
       Reinigung mit Hochdruck über das Dach, alle vier Wohnungen innerhalb
       von 90 Minuten wieder nutzbar, Abrechnung über die HV.

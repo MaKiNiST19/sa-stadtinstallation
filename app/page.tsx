@@ -110,7 +110,7 @@ export default function HomePage() {
           <div className="badge-bar__item">
             <RatingBadge
               title="Google Käuferschutz"
-              subtitle={`${FIRMA.trust.rating} ★ · ${FIRMA.trust.reviewCount} Bewertungen`}
+              subtitle={`${FIRMA.trust.rating.toFixed(1)} ★ · ${FIRMA.trust.reviewCount} Bewertungen`}
               rating={5}
             />
           </div>

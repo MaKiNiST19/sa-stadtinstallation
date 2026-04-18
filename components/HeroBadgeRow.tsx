@@ -14,7 +14,7 @@ export default function HeroBadgeRow() {
   const items: Item[] = [
     {
       icon: "⭐",
-      value: `${FIRMA.trust.rating} Bewertung`,
+      value: `${FIRMA.trust.rating.toFixed(1)} Bewertung`,
       sub: `${FIRMA.trust.reviewCount} Google-Reviews`,
     },
     {

@@ -1,4 +1,4 @@
-import FeaturedSnippet from "@/components/content/FeaturedSnippet";
+﻿import FeaturedSnippet from "@/components/content/FeaturedSnippet";
 import HighlightBox from "@/components/content/HighlightBox";
 import IconList from "@/components/content/IconList";
 import EntityCard from "@/components/content/EntityCard";
@@ -89,7 +89,7 @@ export default (
 
     <h2 style={{ marginTop: "48px" }}>Anfahrt in die Wieden</h2>
     <p style={{ fontSize: "16px", lineHeight: 1.75, color: "var(--mid)" }}>
-      Von der Humboldtgasse in 1100 sind wir über Wiedner Gürtel bzw. Favoritenstraße
+      Von der Puchsbaumgasse in 1100 sind wir über Wiedner Gürtel bzw. Favoritenstraße
       in 10–15 Minuten in 1040. Parkmöglichkeiten sind knapp – wir nutzen die
       Kurzparkzone mit vorgelöstem Parkschein und planen Material-Lieferungen
       vorab, damit das Stiegenhaus nicht blockiert wird.

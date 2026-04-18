@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { FIRMA } from "@/lib/company";
 import {
   generateBreadcrumbSchema,
@@ -79,7 +79,7 @@ export default function UeberUnsPage() {
                 SA Stadtinstallation ist ein konzessionierter Wiener Installationsbetrieb
                 für Gas-, Wasser-, Heizungs- und Sanitärtechnik. Seit 2015 betreuen wir
                 Privatkunden, Eigentümergemeinschaften, Hausverwaltungen und Gewerbebetriebe
-                in allen 23 Wiener Bezirken. Unser Firmensitz liegt in der Humboldtgasse 33
+                in allen 23 Wiener Bezirken. Unser Firmensitz liegt in der Puchsbaumgasse 39a
                 in 1100 Wien (Favoriten). Wir sind Mitglied der Landesinnung Wien, WKÖ-
                 Mitglied und durch Google Käuferschutz verifiziert.
               </p>
@@ -173,7 +173,7 @@ export default function UeberUnsPage() {
 
       <CtaBand
         title="Lernen Sie uns kennen – bei Ihrem nächsten Auftrag"
-        subtitle={`Rufen Sie an, mailen Sie uns – oder schauen Sie bei uns in der Humboldtgasse vorbei. ${FIRMA.telephoneDisplay}`}
+        subtitle={`Rufen Sie an, mailen Sie uns – oder schauen Sie bei uns in der Puchsbaumgasse vorbei. ${FIRMA.telephoneDisplay}`}
       />
     </>
   );

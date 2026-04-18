@@ -1,4 +1,4 @@
-import HighlightBox from "@/components/content/HighlightBox";
+﻿import HighlightBox from "@/components/content/HighlightBox";
 import MiniStory from "@/components/content/MiniStory";
 import FeaturedSnippet from "@/components/content/FeaturedSnippet";
 import IconList from "@/components/content/IconList";
@@ -76,7 +76,7 @@ export default (
     <p>
       Unsere Anfahrtszeiten sind keine Marketing-Versprechen, sondern Erfahrungswerte aus
       mehreren tausend Einsätzen. Unser Büro und unser Werkstatt­lager stehen in der
-      Humboldtgasse 33 im 10. Bezirk, von dort fahren wir in ganz Wien.
+      Puchsbaumgasse 39a im 10. Bezirk, von dort fahren wir in ganz Wien.
     </p>
     <IconList
       items={[

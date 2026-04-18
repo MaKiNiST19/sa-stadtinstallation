@@ -1,4 +1,4 @@
-import FeaturedSnippet from "@/components/content/FeaturedSnippet";
+﻿import FeaturedSnippet from "@/components/content/FeaturedSnippet";
 import HighlightBox from "@/components/content/HighlightBox";
 import IconList from "@/components/content/IconList";
 import EntityCard from "@/components/content/EntityCard";
@@ -94,7 +94,7 @@ export default (
 
     <h2 style={{ marginTop: "48px" }}>Anfahrt über Südosttangente & A23</h2>
     <p style={{ fontSize: "16px", lineHeight: 1.75, color: "var(--mid)" }}>
-      Von unserem Standort Humboldtgasse (1100 Favoriten) erreichen wir die Donaustadt
+      Von unserem Standort Puchsbaumgasse (1100 Favoriten) erreichen wir die Donaustadt
       über die Südosttangente bzw. über die Praterbrücke in 25–45 Minuten je nach
       Tageszeit. Seestadt Aspern und Stadlau schaffen wir auch im Berufsverkehr
       durchschnittlich in 35 Minuten. Für größere Projekte (Badsanierung, Wärmepumpe)

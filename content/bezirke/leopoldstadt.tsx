@@ -1,4 +1,4 @@
-import FeaturedSnippet from "@/components/content/FeaturedSnippet";
+﻿import FeaturedSnippet from "@/components/content/FeaturedSnippet";
 import HighlightBox from "@/components/content/HighlightBox";
 import IconList from "@/components/content/IconList";
 import EntityCard from "@/components/content/EntityCard";
@@ -85,7 +85,7 @@ export default (
 
     <h2 style={{ marginTop: "48px" }}>Anfahrt & Erreichbarkeit</h2>
     <p style={{ fontSize: "16px", lineHeight: 1.75, color: "var(--mid)" }}>
-      Von unserem Standort Humboldtgasse 33 in 1100 Favoriten sind wir in die Leopoldstadt
+      Von unserem Standort Puchsbaumgasse 39a in 1100 Favoriten sind wir in die Leopoldstadt
       je nach Tageszeit in 15–25 Minuten. Bei Notfällen nutzen wir die Direktverbindung
       über Erdberger Lände – auch mitten in der Nacht verlässlich. Wir decken den
       gesamten 2. Bezirk ab, von Zwischenbrücken bis zur Donauplatte.

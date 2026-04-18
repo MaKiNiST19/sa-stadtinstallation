@@ -1,4 +1,4 @@
-import FeaturedSnippet from "@/components/content/FeaturedSnippet";
+﻿import FeaturedSnippet from "@/components/content/FeaturedSnippet";
 import HighlightBox from "@/components/content/HighlightBox";
 import IconList from "@/components/content/IconList";
 import EntityCard from "@/components/content/EntityCard";
@@ -94,7 +94,7 @@ export default (
       Von 1100 Favoriten sind wir via Gürtel – Alser Straße in 20–25 Minuten
       am Alsergrund. Für Ordinations-Termine planen wir grundsätzlich außerhalb
       der Sprechzeiten oder in Ruhephasen am Vormittag. Notdienste rund um
-      das AKH fährt häufig unser nächster Monteur ab Humboldtgasse direkt an.
+      das AKH fährt häufig unser nächster Monteur ab Puchsbaumgasse direkt an.
     </p>
   </>
 );

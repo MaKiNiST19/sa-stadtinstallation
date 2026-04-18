@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { FIRMA } from "@/lib/company";
@@ -155,7 +155,7 @@ export default async function BezirkPage({ params }: { params: Promise<{ slug: s
             <EntityCard label="Bauepoche" title="Typische Gebäudestruktur" icon="🏛">
               {b.buildingStyle.join(" · ")}
             </EntityCard>
-            <EntityCard label="Anfahrt" title="Von Humboldtgasse 1100" icon="🚗">
+            <EntityCard label="Anfahrt" title="Von Puchsbaumgasse 1100" icon="🚗">
               Je nach Verkehr {bezirkDistanceHint(b.number)} Minuten. Notfälle werden immer bevorzugt behandelt.
             </EntityCard>
           </div>

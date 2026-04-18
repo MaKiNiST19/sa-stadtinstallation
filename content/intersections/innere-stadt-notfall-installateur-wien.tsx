@@ -1,4 +1,4 @@
-import FeaturedSnippet from "@/components/content/FeaturedSnippet";
+﻿import FeaturedSnippet from "@/components/content/FeaturedSnippet";
 import HighlightBox from "@/components/content/HighlightBox";
 import IconList from "@/components/content/IconList";
 import MiniStory from "@/components/content/MiniStory";
@@ -46,7 +46,7 @@ export default (
       outcome="Leck in 40 Minuten abgesperrt, Wohnung trocken, Reparatur in Etappen über HV koordiniert."
     >
       Freitagabend 22:30, Anruf eines Bewohners: Wasser rinnt aus der Decke in
-      den Salon. Wir fuhren ab Humboldtgasse in 22 Minuten hin, lokalisierten
+      den Salon. Wir fuhren ab Puchsbaumgasse in 22 Minuten hin, lokalisierten
       einen Heizungsverbinder über der Stuckdecke (zugänglich nur über eine
       Revisionsklappe, die wir im Gang öffneten). Abgesperrt, Wasser
       aufgenommen, Parkett trocken – keine Folgeschäden. Dauerhafte Lösung:

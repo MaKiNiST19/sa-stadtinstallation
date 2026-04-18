@@ -1,4 +1,4 @@
-import FeaturedSnippet from "@/components/content/FeaturedSnippet";
+﻿import FeaturedSnippet from "@/components/content/FeaturedSnippet";
 import HighlightBox from "@/components/content/HighlightBox";
 import IconList from "@/components/content/IconList";
 import EntityCard from "@/components/content/EntityCard";
@@ -13,7 +13,7 @@ export default (
           In 1100 Favoriten bieten wir <strong>Thermenwartung ab 129 € brutto</strong> für
           klassische Wohnungsthermen (Vaillant, Viessmann, Junkers, Bosch, Wolf). Mit
           Wartungsvertrag 10 % Rabatt und Vorrang bei Störungen. Da unsere Werkstatt in
-          der Humboldtgasse 33 liegt, bündeln wir Wartungen in Favoriten häufig auf einen
+          der Puchsbaumgasse 39a liegt, bündeln wir Wartungen in Favoriten häufig auf einen
           einzigen Arbeitstag – das hält die Anfahrtskosten niedrig und erlaubt uns,
           faire Preise zu garantieren.
         </p>

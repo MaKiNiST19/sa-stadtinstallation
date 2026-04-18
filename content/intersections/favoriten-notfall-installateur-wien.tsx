@@ -1,4 +1,4 @@
-import FeaturedSnippet from "@/components/content/FeaturedSnippet";
+﻿import FeaturedSnippet from "@/components/content/FeaturedSnippet";
 import HighlightBox from "@/components/content/HighlightBox";
 import IconList from "@/components/content/IconList";
 import EntityCard from "@/components/content/EntityCard";
@@ -10,7 +10,7 @@ export default (
       question="Wer ist der schnellste Notfall-Installateur in 1100 Favoriten?"
       answer={
         <p>
-          <strong>SA Stadtinstallation hat Firmensitz in der Humboldtgasse 33/1/29, 1100 Wien</strong> –
+          <strong>SA Stadtinstallation hat Firmensitz in der Puchsbaumgasse 39a, A-1100 Wien</strong> –
           direkt im 10. Bezirk. Das bedeutet für Sie: Im Notfall sind wir tagsüber in
           Favoriten durchschnittlich in 5–15 Minuten vor Ort, nachts je nach Tourenlage
           in 15–30 Minuten. Bei echten Notfällen (Rohrbruch, Gasgeruch, Heizungsausfall
@@ -93,7 +93,7 @@ export default (
         marginTop: "40px",
       }}
     >
-      <EntityCard label="Lage" title="Humboldtgasse 33, 1100" icon="📍">
+      <EntityCard label="Lage" title="Puchsbaumgasse 39a, 1100" icon="📍">
         Unser Firmensitz. Von hier zu Reumannplatz 1,2 km, zum Keplerplatz 1,9 km,
         nach Oberlaa 4,5 km. Im Notfall tatsächlich schneller als jeder Zufallsdienst.
       </EntityCard>

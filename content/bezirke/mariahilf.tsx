@@ -1,4 +1,4 @@
-import FeaturedSnippet from "@/components/content/FeaturedSnippet";
+﻿import FeaturedSnippet from "@/components/content/FeaturedSnippet";
 import HighlightBox from "@/components/content/HighlightBox";
 import IconList from "@/components/content/IconList";
 import EntityCard from "@/components/content/EntityCard";
@@ -90,7 +90,7 @@ export default (
 
     <h2 style={{ marginTop: "48px" }}>Anfahrt nach Mariahilf</h2>
     <p style={{ fontSize: "16px", lineHeight: 1.75, color: "var(--mid)" }}>
-      Von der Humboldtgasse 1100 sind wir über Matzleinsdorfer Platz – Gürtel
+      Von der Puchsbaumgasse 1100 sind wir über Matzleinsdorfer Platz – Gürtel
       in 15–20 Minuten in 1060. In Gastro-Notfällen außerhalb der Öffnungszeiten
       nutzen wir die Nachtruhe, um Liefer- und Parkplatzprobleme zu umgehen.
     </p>

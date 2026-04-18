@@ -1,4 +1,4 @@
-import FeaturedSnippet from "@/components/content/FeaturedSnippet";
+﻿import FeaturedSnippet from "@/components/content/FeaturedSnippet";
 import HighlightBox from "@/components/content/HighlightBox";
 import IconList from "@/components/content/IconList";
 import MiniStory from "@/components/content/MiniStory";
@@ -46,7 +46,7 @@ export default (
       outcome="Abgesperrt in 35 Minuten nach Anruf, Reparatur am nächsten Vormittag."
     >
       Um 01:20 meldete ein Mieter Wasserschaden in der Wohnung darunter. Wir
-      fuhren ab Humboldtgasse 33 in 8 Minuten hin, fanden das Leck am
+      fuhren ab Puchsbaumgasse 39a in 8 Minuten hin, fanden das Leck am
       Kaltwasser-Anschluss der Küche (verpresste Kupferverbindung, Jahre alt),
       sperrten mit Etagenventil ab. Trockenlegung durch Blower am Vormittag,
       neue Verbindung in Edelstahl-Pressfittung – fertig bis 13 Uhr.

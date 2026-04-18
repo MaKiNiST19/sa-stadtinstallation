@@ -1,4 +1,4 @@
-// Die 23 Wiener Gemeindebezirke
+﻿// Die 23 Wiener Gemeindebezirke
 // Jeder Bezirk ist eine eigene Pillar-Seite /bezirke/[slug]
 // UND wird mit jeder der 7 Leistungen zu einer Cluster-Seite kombiniert.
 //
@@ -260,9 +260,9 @@ export const BEZIRKE: Bezirk[] = [
       "Gas Installateur Favoriten",
     ],
     description:
-      "Installateur 1100 Favoriten – Ihr Nachbar in der Humboldtgasse. Lokaler Meisterbetrieb, 24h Notdienst, Festpreis.",
+      "Installateur 1100 Favoriten – Ihr Nachbar in der Puchsbaumgasse. Lokaler Meisterbetrieb, 24h Notdienst, Festpreis.",
     intro:
-      "Favoriten ist unser Heimatbezirk. Unsere Werkstatt liegt in der Humboldtgasse 33. Wir kennen jede Gasse – vom Reumannplatz über das Sonnwendviertel bis nach Oberlaa. Ihre Anfahrt ist meistens kostenlos.",
+      "Favoriten ist unser Heimatbezirk. Unsere Werkstatt liegt in der Puchsbaumgasse 39a. Wir kennen jede Gasse – vom Reumannplatz über das Sonnwendviertel bis nach Oberlaa. Ihre Anfahrt ist meistens kostenlos.",
     population: 210000,
     area: 31.82,
   },

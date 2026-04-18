@@ -1,4 +1,4 @@
-import FeaturedSnippet from "@/components/content/FeaturedSnippet";
+﻿import FeaturedSnippet from "@/components/content/FeaturedSnippet";
 import HighlightBox from "@/components/content/HighlightBox";
 import IconList from "@/components/content/IconList";
 import MiniStory from "@/components/content/MiniStory";
@@ -44,7 +44,7 @@ export default (
       context="1210 Wien, Einfamilienhaus Strebersdorf, Luft-Wasser-Wärmepumpe 3 Jahre alt"
       outcome="Anfahrt 32 Minuten, Fehlercode Sicherheitsdruckschalter, Teil am Lager, binnen 2 Stunden wieder warm."
     >
-      7:10 Uhr, Anruf: Haus kalt, WP meldet Störung. Wir fuhren ab Humboldtgasse
+      7:10 Uhr, Anruf: Haus kalt, WP meldet Störung. Wir fuhren ab Puchsbaumgasse
       über A23 – Nordbrücke, lasen den Fehlercode aus (Sicherheitsdruckschalter
       Heizkreis defekt), hatten das Teil im Servicefahrzeug und tauschten es
       in 35 Minuten. Um 9:40 lief die Anlage wieder, Kinder waren zur Schule

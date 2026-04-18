@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { FIRMA } from "@/lib/company";
 import {
   generateBreadcrumbSchema,
@@ -89,7 +89,7 @@ export default function KontaktPage() {
               werden nicht 24/7 gelesen.
             </EntityCard>
             <EntityCard label="Firmensitz" title={`${FIRMA.address.street}, ${FIRMA.address.postalCode} ${FIRMA.address.city}`} icon="📍">
-              Humboldtgasse 33/1/29, 1100 Wien – Favoriten. Parteienverkehr nach
+              Puchsbaumgasse 39a, A-1100 Wien – Favoriten. Parteienverkehr nach
               Vereinbarung.
             </EntityCard>
             <EntityCard label="Öffnungszeiten Büro" title="Mo–Fr 07–18" icon="🕑">
@@ -139,10 +139,10 @@ export default function KontaktPage() {
 
           <h2 style={{ marginTop: "48px" }}>Anfahrt zum Firmensitz</h2>
           <p style={{ fontSize: "16px", lineHeight: 1.75, color: "var(--mid)" }}>
-            Unsere Werkstatt liegt in der Humboldtgasse 33/1/29, 1100 Wien – 200 Meter
+            Unsere Werkstatt liegt in der Puchsbaumgasse 39a, A-1100 Wien – 200 Meter
             vom Reumannplatz entfernt. Öffentlich erreichbar über U1 Reumannplatz
             (2 Minuten zu Fuß) oder Bus 7A. Parken: Kurzparkzone, meist Platz in der
-            Humboldtgasse selbst oder in der Laxenburger Straße. Besuche nach
+            Puchsbaumgasse selbst oder in der Laxenburger Straße. Besuche nach
             Vereinbarung – rufen Sie vorher an, wir sind oft auf Montage.
           </p>
 

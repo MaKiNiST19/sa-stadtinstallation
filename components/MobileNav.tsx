@@ -81,8 +81,7 @@ export default function MobileNav() {
           style={{
             position: "fixed",
             inset: 0,
-            background: "rgba(10, 25, 41, 0.12)",
-            backdropFilter: "blur(4px)",
+            background: "rgba(10, 25, 41, 0.15)",
             zIndex: 999,
           }}
         />
@@ -95,11 +94,12 @@ export default function MobileNav() {
         style={{
           position: "absolute",
           top: "100%",
-          right: "0",
-          marginTop: "12px",
-          width: "min(320px, 94vw)",
+          left: 0,
+          right: 0,
+          marginTop: "8px",
+          width: "auto",
           background: "white",
-          borderRadius: "20px",
+          borderRadius: "0 0 16px 16px",
           boxShadow: "0 20px 50px rgba(0,0,0,0.15)",
           zIndex: 1000,
           overflow: "hidden",
@@ -108,8 +108,9 @@ export default function MobileNav() {
           pointerEvents: open ? "all" : "none",
           visibility: open ? "visible" : "hidden",
           transition: "all 0.4s cubic-bezier(0.16, 1, 0.3, 1)",
-          padding: "24px",
+          padding: "20px 16px 24px",
           border: "1px solid rgba(0,0,0,0.05)",
+          borderTop: "none",
         }}
       >
         <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>

@@ -15,7 +15,7 @@ export const FIRMA = {
   foundingDate: "2015",
 
   address: {
-    street: "Humboldtgasse 33/1/29",
+    street: "Puchsbaumgasse 39a",
     postalCode: "1100",
     city: "Wien",
     region: "Wien",
@@ -47,7 +47,7 @@ export const FIRMA = {
     wkoMember: true,
     meisterbetrieb: true,
     innung: "Landesinnung Wien der Sanitär-, Heizungs- und Lüftungstechniker",
-    rating: 4.9,
+    rating: 5.0,
     reviewCount: 127,
     yearsInBusiness: 10,
   },

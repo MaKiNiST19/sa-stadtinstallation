@@ -1,4 +1,4 @@
-import FeaturedSnippet from "@/components/content/FeaturedSnippet";
+﻿import FeaturedSnippet from "@/components/content/FeaturedSnippet";
 import HighlightBox from "@/components/content/HighlightBox";
 import IconList from "@/components/content/IconList";
 import MiniStory from "@/components/content/MiniStory";
@@ -10,7 +10,7 @@ export default (
       answer={
         <p>
           Meidling grenzt direkt an Favoriten – wir fahren aus 1100 ab
-          Humboldtgasse über Matzleinsdorfer Platz in 10–15 Minuten in den
+          Puchsbaumgasse über Matzleinsdorfer Platz in 10–15 Minuten in den
           12. Bezirk. Das macht uns im Notdienst zur nächsten lokalen Adresse
           für Rohrbruch, Thermenausfall und Verstopfung in Meidlinger
           Hauptstraße, am Bahnhof Meidling und im Schöpfwerk.
@@ -44,7 +44,7 @@ export default (
       outcome="Abgesperrt in 25 Minuten, Geschäft blieb geöffnet, Reparatur am Sonntag."
     >
       Der Fleischer meldete Wasser im Kühlraum am Samstagvormittag. Wir fuhren
-      ab Humboldtgasse in 12 Minuten hin, lokalisierten einen gebrochenen
+      ab Puchsbaumgasse in 12 Minuten hin, lokalisierten einen gebrochenen
       Kaltwasser-Steigstrang, sperrten gezielt ab – der Rest des Hauses blieb
       wasserversorgt. Der Fleischer konnte geöffnet bleiben, nur der Kühlraum
       war kurz außer Betrieb. Reparatur sauber am Sonntag, Montag pünktlich

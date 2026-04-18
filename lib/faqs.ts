@@ -1,4 +1,4 @@
-// Zentrale FAQ-Bibliothek, nach Themen gruppiert.
+﻿// Zentrale FAQ-Bibliothek, nach Themen gruppiert.
 // Jede Seite pickt sich einen relevanten Subset (um Duplicate Content zu vermeiden)
 // und speist daraus ihren sichtbaren FAQ-Block + das FAQPage-JSON-LD.
 
@@ -16,7 +16,7 @@ export const FAQ_HOME: FaqItem[] = [
   {
     question: "In welchen Wiener Bezirken sind Sie tätig?",
     answer:
-      "Wir decken alle 23 Wiener Gemeindebezirke (1010 bis 1230) ab. Unser Firmensitz in der Humboldtgasse 33 liegt in 1100 Favoriten, von dort sind alle Bezirke schnell erreichbar.",
+      "Wir decken alle 23 Wiener Gemeindebezirke (1010 bis 1230) ab. Unser Firmensitz in der Puchsbaumgasse 39a liegt in 1100 Favoriten, von dort sind alle Bezirke schnell erreichbar.",
   },
   {
     question: "Sind Ihre Preise transparent?",

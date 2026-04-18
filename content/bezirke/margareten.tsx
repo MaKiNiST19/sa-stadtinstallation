@@ -1,4 +1,4 @@
-import FeaturedSnippet from "@/components/content/FeaturedSnippet";
+﻿import FeaturedSnippet from "@/components/content/FeaturedSnippet";
 import HighlightBox from "@/components/content/HighlightBox";
 import IconList from "@/components/content/IconList";
 import EntityCard from "@/components/content/EntityCard";
@@ -91,7 +91,7 @@ export default (
 
     <h2 style={{ marginTop: "48px" }}>Anfahrt nach Margareten</h2>
     <p style={{ fontSize: "16px", lineHeight: 1.75, color: "var(--mid)" }}>
-      1050 ist direkter Nachbarbezirk von 1100 Favoriten. Von der Humboldtgasse
+      1050 ist direkter Nachbarbezirk von 1100 Favoriten. Von der Puchsbaumgasse
       sind wir über den Matzleinsdorfer Platz in rund 10 Minuten im 5. Bezirk –
       auch im Berufsverkehr selten länger als 20 Minuten. Dadurch schaffen wir
       Notdienste in Margareten oft als schnellste Adresse im gesamten südlichen

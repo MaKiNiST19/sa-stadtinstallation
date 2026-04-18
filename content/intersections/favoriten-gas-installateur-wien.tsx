@@ -1,4 +1,4 @@
-import FeaturedSnippet from "@/components/content/FeaturedSnippet";
+﻿import FeaturedSnippet from "@/components/content/FeaturedSnippet";
 import HighlightBox from "@/components/content/HighlightBox";
 import IconList from "@/components/content/IconList";
 import MiniStory from "@/components/content/MiniStory";
@@ -15,7 +15,7 @@ export default (
           Gemeindebauten der 1920er–1960er und Neubauten mit teils Fernwärme statt
           Gas. Als ÖVGW-zertifizierter Gasinstallateur (G1/G2) übernehmen wir alle
           gasrechtlichen Arbeiten in 1100 – mit bekannt schneller Anfahrt, da
-          unser Sitz in der Humboldtgasse 33 liegt.
+          unser Sitz in der Puchsbaumgasse 39a liegt.
         </p>
       }
     />
@@ -26,7 +26,7 @@ export default (
         { text: "Gas-Anschluss-Erneuerung in Gründerzeit-Zinshäusern Quellenstraße" },
         { text: "Zählermontage und Leitungsabschnitt-Erneuerung Wienerberg-Terrasse" },
         { text: "Gasdichtheitsprüfung nach ÖVGW G1 in Wiener-Wohnen-Häusern" },
-        { text: "Therme-Neuinstallation mit Leitungsverlegung Humboldtgasse / Kudlichgasse" },
+        { text: "Therme-Neuinstallation mit Leitungsverlegung Puchsbaumgasse / Kudlichgasse" },
         { text: "Gasdruckregler und Hausanschluss-Check Oberlaa / Favoritenstraße" },
         { text: "Umstellung Gas → Fernwärme bei Anschluss-Möglichkeit im Sonnwendviertel" },
       ]}
@@ -34,7 +34,7 @@ export default (
     />
 
     <HighlightBox variant="blue" title="Kein Anfahrtsaufschlag für 1100" icon="🏠">
-      Unser Betrieb sitzt in der Humboldtgasse 33, 1100 Wien. Für Kunden im
+      Unser Betrieb sitzt in der Puchsbaumgasse 39a, 1100 Wien. Für Kunden im
       10. Bezirk verrechnen wir keinen Anfahrtsaufschlag – egal ob Reumannplatz,
       Laaerberg, Oberlaa oder Monte Laa. Notdienst und Terminarbeit laufen
       meistens binnen 30 Minuten.

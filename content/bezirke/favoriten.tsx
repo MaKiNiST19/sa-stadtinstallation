@@ -1,4 +1,4 @@
-import FeaturedSnippet from "@/components/content/FeaturedSnippet";
+﻿import FeaturedSnippet from "@/components/content/FeaturedSnippet";
 import HighlightBox from "@/components/content/HighlightBox";
 import IconList from "@/components/content/IconList";
 import EntityCard from "@/components/content/EntityCard";
@@ -11,7 +11,7 @@ export default (
       answer={
         <p>
           <strong>Favoriten ist unser Heimatbezirk</strong>. Unsere Werkstatt liegt in der
-          Humboldtgasse 33/1/29 – 200 Meter vom Reumannplatz entfernt. Anfahrt in den
+          Puchsbaumgasse 39a – 200 Meter vom Reumannplatz entfernt. Anfahrt in den
           1. bis 12. Bezirk schaffen wir meist in 10–25 Minuten, in Favoriten selbst
           oft unter 10 Minuten. Wir sind <strong>WKÖ-Meisterbetrieb</strong>,
           Google Käuferschutz-verifiziert und seit 2015 in Wien tätig. Lokale Kunden
@@ -51,7 +51,7 @@ export default (
     >
       Kurz vor Weihnachten platzte ein Steigstrang im 3. Stock. Wasser lief zwei Etagen
       tief. Der Kunde rief uns 23:15 Uhr an – wir waren um 23:27 Uhr vor Ort, da unser
-      Team aus der Humboldtgasse anrücken konnte. Hauptabsperrhahn, Schadensbegrenzung,
+      Team aus der Puchsbaumgasse anrücken konnte. Hauptabsperrhahn, Schadensbegrenzung,
       Leckortung und Provisorium bis zur Rohrsanierung am 27. Dezember. Die Hausverwaltung
       erhielt noch in derselben Nacht Fotos, Zustandsbericht und Kostenschätzung.
     </MiniStory>
@@ -83,7 +83,7 @@ export default (
     </div>
 
     <HighlightBox variant="blue" title="Kein Anfahrtsaufschlag für 1100" icon="€">
-      Weil wir in der Humboldtgasse sitzen, berechnen wir in Favoriten keine pauschale
+      Weil wir in der Puchsbaumgasse sitzen, berechnen wir in Favoriten keine pauschale
       Anfahrtspauschale. Der Preis, den wir Ihnen nennen, ist der Preis, den Sie zahlen –
       inklusive An- und Abfahrt zum Firmensitz.
     </HighlightBox>

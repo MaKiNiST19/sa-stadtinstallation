@@ -1,4 +1,4 @@
-import FeaturedSnippet from "@/components/content/FeaturedSnippet";
+﻿import FeaturedSnippet from "@/components/content/FeaturedSnippet";
 import HighlightBox from "@/components/content/HighlightBox";
 import IconList from "@/components/content/IconList";
 import MiniStory from "@/components/content/MiniStory";
@@ -46,7 +46,7 @@ export default (
       outcome="Abgesperrt in 40 Minuten nach Anruf, Haus blieb wasserversorgt über Nebenstrang."
     >
       Ein Mieter meldete Wasser im Stiegenhaus und in seiner Wohnung. Wir
-      fuhren ab Humboldtgasse in 18 Minuten über die Südosttangente, sperrten
+      fuhren ab Puchsbaumgasse in 18 Minuten über die Südosttangente, sperrten
       den betroffenen Strang im Keller ab, während die Nebenstränge
       wasserführend blieben. Am nächsten Vormittag tauschten wir das geborstene
       Stahlrohrstück gegen Edelstahl-Pressfitting. Keine Folgeschäden bei den
