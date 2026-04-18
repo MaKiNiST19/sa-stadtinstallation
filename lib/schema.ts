@@ -109,6 +109,9 @@ export function generateOrganizationSchema() {
 // 2. Service – pro Leistungsseite
 // -----------------------------------------------------------
 export function generateServiceSchema(leistung: Leistung) {
+  const imageUrl = leistung.image.startsWith("http")
+    ? leistung.image
+    : `${FIRMA.url}${leistung.image}`;
   return {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -117,6 +120,7 @@ export function generateServiceSchema(leistung: Leistung) {
     description: leistung.description,
     serviceType: leistung.shortTitle,
     provider: { "@id": `${FIRMA.url}/#organization` },
+    image: imageUrl,
     areaServed: {
       "@type": "City",
       name: "Wien",
@@ -131,6 +135,33 @@ export function generateServiceSchema(leistung: Leistung) {
       priceCurrency: "EUR",
       availability: "https://schema.org/InStock",
     },
+  };
+}
+
+// -----------------------------------------------------------
+// 2b. ImageObject – für Cover-Bild auf Leistungsseite
+// -----------------------------------------------------------
+export function generateLeistungImageSchema(leistung: Leistung) {
+  const imageUrl = leistung.image.startsWith("http")
+    ? leistung.image
+    : `${FIRMA.url}${leistung.image}`;
+  const alt = leistung.imageAlt ?? `${leistung.shortTitle} in Wien – ${FIRMA.name}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "ImageObject",
+    "@id": `${FIRMA.url}/leistungen/${leistung.slug}/#cover-image`,
+    contentUrl: imageUrl,
+    url: imageUrl,
+    name: alt,
+    description: alt,
+    caption: alt,
+    representativeOfPage: true,
+    creator: { "@id": `${FIRMA.url}/#organization` },
+    copyrightHolder: { "@id": `${FIRMA.url}/#organization` },
+    license: FIRMA.url,
+    acquireLicensePage: `${FIRMA.url}/kontakt`,
+    creditText: FIRMA.name,
+    inLanguage: "de-AT",
   };
 }
 

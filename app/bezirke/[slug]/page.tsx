@@ -14,6 +14,7 @@ import {
 import SchemaJsonLd from "@/components/SchemaJsonLd";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import PhoneIcon from "@/components/PhoneIcon";
+import HeroBadgeRow from "@/components/HeroBadgeRow";
 import FaqSection from "@/components/content/FaqSection";
 import CtaBand from "@/components/content/CtaBand";
 import HighlightBox from "@/components/content/HighlightBox";
@@ -107,6 +108,28 @@ export default async function BezirkPage({ params }: { params: Promise<{ slug: s
             </a>
             <a href="/kontakt" className="btn-outline">Termin anfragen</a>
           </div>
+
+          <HeroBadgeRow />
+        </div>
+      </section>
+
+      {/* Featured Snippet – Wien-spezifische Direktantwort */}
+      <section style={{ padding: "56px 0 0", background: "var(--bg)" }}>
+        <div className="container">
+          <FeaturedSnippet
+            question={`Was ist beim Installateur im ${b.number}. Wiener Gemeindebezirk (${b.shortName}) zu beachten?`}
+            answer={
+              <p>
+                Im {b.number}. Wiener Gemeindebezirk ({b.shortName}, {b.plz}) prägen{" "}
+                {b.buildingStyle.slice(0, 2).join(" und ")} die
+                Installationstechnik: Altbau Wien erfordert andere Materialien als Gemeindebau
+                oder Neubau. Gas-Anmeldungen laufen über Wiener Netze, Energieabrechnung
+                häufig über Wien Energie. SA Stadtinstallation ist konzessionierter
+                Meisterbetrieb (WKO Wien / Landesinnung Wien) und hat in {b.shortName}{" "}
+                langjährige Erfahrung.
+              </p>
+            }
+          />
         </div>
       </section>
 
@@ -217,7 +240,7 @@ export default async function BezirkPage({ params }: { params: Promise<{ slug: s
                 <div className="service-magic-card__img">
                   <Image
                     src={l.image}
-                    alt={l.shortTitle}
+                    alt={l.imageAlt ?? `${l.shortTitle} in ${b.shortName} Wien`}
                     fill
                     sizes="(max-width: 960px) 50vw, 33vw"
                     style={{ objectFit: "cover" }}

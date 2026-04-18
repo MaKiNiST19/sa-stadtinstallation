@@ -13,6 +13,7 @@ import HighlightBox from "@/components/content/HighlightBox";
 import FeaturedSnippet from "@/components/content/FeaturedSnippet";
 import IconList from "@/components/content/IconList";
 import PhoneIcon from "@/components/PhoneIcon";
+import HeroBadgeRow from "@/components/HeroBadgeRow";
 
 export const metadata: Metadata = {
   title: `Installateur in allen 23 Wiener Bezirken | ${FIRMA.name}`,
@@ -78,6 +79,7 @@ export default function BezirkePage() {
             </a>
             <a href="/leistungen" className="btn-outline">7 Leistungen ansehen</a>
           </div>
+          <HeroBadgeRow />
         </div>
       </section>
 

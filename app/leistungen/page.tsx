@@ -8,6 +8,7 @@ import {
 } from "@/lib/schema";
 import SchemaJsonLd from "@/components/SchemaJsonLd";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import HeroBadgeRow from "@/components/HeroBadgeRow";
 import CtaBand from "@/components/content/CtaBand";
 import HighlightBox from "@/components/content/HighlightBox";
 import FeaturedSnippet from "@/components/content/FeaturedSnippet";
@@ -43,6 +44,7 @@ export default function LeistungenPage() {
             Vom tropfenden Wasserhahn bis zum Heizungstausch: Wir decken das gesamte Spektrum
             Gas, Wasser, Heizung, Sanitär ab – konzessioniert, dokumentiert und mit Festpreis.
           </p>
+          <HeroBadgeRow />
         </div>
       </section>
 
@@ -65,7 +67,7 @@ export default function LeistungenPage() {
             {LEISTUNGEN.map((l) => (
               <a key={l.slug} href={`/leistungen/${l.slug}`} className="service-magic-card">
                 <div className="service-magic-card__img">
-                  <Image src={l.image} alt={l.shortTitle} fill sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 33vw" style={{ objectFit: "cover" }} />
+                  <Image src={l.image} alt={l.imageAlt ?? `${l.shortTitle} in Wien`} fill sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 33vw" style={{ objectFit: "cover" }} />
                 </div>
                 <h2 className="service-magic-card__title">{l.shortTitle}</h2>
                 <p className="service-magic-card__text">{l.description}</p>

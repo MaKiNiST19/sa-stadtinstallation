@@ -6,6 +6,7 @@ import { BEZIRKE } from "@/lib/bezirke";
 import { pickFaqs, FAQS_BY_TOPIC } from "@/lib/faqs";
 import {
   generateServiceSchema,
+  generateLeistungImageSchema,
   generateFAQSchema,
   generateBreadcrumbSchema,
   combineSchemas,
@@ -14,6 +15,7 @@ import Image from "next/image";
 import SchemaJsonLd from "@/components/SchemaJsonLd";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import PhoneIcon from "@/components/PhoneIcon";
+import HeroBadgeRow from "@/components/HeroBadgeRow";
 import FaqSection from "@/components/content/FaqSection";
 import CtaBand from "@/components/content/CtaBand";
 import HighlightBox from "@/components/content/HighlightBox";
@@ -75,6 +77,7 @@ export default async function LeistungPage({ params }: { params: Promise<{ slug:
 
   const schema = combineSchemas(
     generateServiceSchema(l),
+    generateLeistungImageSchema(l),
     generateFAQSchema(faqs),
     generateBreadcrumbSchema(breadcrumbs)
   );
@@ -119,31 +122,45 @@ export default async function LeistungPage({ params }: { params: Promise<{ slug:
             </a>
             <a href="/kontakt" className="btn-outline">Termin anfragen</a>
           </div>
+
+          <HeroBadgeRow />
         </div>
       </section>
 
       {/* Cover image below page title */}
       <section style={{ background: "var(--bg)", padding: "40px 0 0" }}>
         <div className="container">
-          <div
-            style={{
-              position: "relative",
-              width: "100%",
-              aspectRatio: "21 / 9",
-              borderRadius: "16px",
-              overflow: "hidden",
-              boxShadow: "0 12px 40px rgba(11,79,156,0.12)",
-            }}
-          >
-            <Image
-              src={l.image}
-              alt={l.shortTitle}
-              fill
-              sizes="(max-width: 1200px) 100vw, 1200px"
-              style={{ objectFit: "cover" }}
-              priority
-            />
-          </div>
+          <figure style={{ margin: 0 }}>
+            <div
+              style={{
+                position: "relative",
+                width: "100%",
+                aspectRatio: "21 / 9",
+                borderRadius: "16px",
+                overflow: "hidden",
+                boxShadow: "0 12px 40px rgba(11,79,156,0.12)",
+              }}
+            >
+              <Image
+                src={l.image}
+                alt={l.imageAlt ?? `${l.shortTitle} in Wien – ${FIRMA.name}`}
+                fill
+                sizes="(max-width: 1200px) 100vw, 1200px"
+                style={{ objectFit: "cover" }}
+                priority
+              />
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      {/* Featured Snippet – direkte Antwort für Google & AI Overviews */}
+      <section style={{ background: "var(--bg)", padding: "48px 0 0" }}>
+        <div className="container">
+          <FeaturedSnippet
+            question={l.featuredQuestion}
+            answer={<p>{l.shortAnswer}</p>}
+          />
         </div>
       </section>
 
@@ -253,7 +270,7 @@ export default async function LeistungPage({ params }: { params: Promise<{ slug:
                   <div className="service-magic-card__img">
                     <Image
                       src={r!.image}
-                      alt={r!.shortTitle}
+                      alt={r!.imageAlt ?? `${r!.shortTitle} in Wien`}
                       fill
                       sizes="(max-width: 960px) 50vw, 33vw"
                       style={{ objectFit: "cover" }}

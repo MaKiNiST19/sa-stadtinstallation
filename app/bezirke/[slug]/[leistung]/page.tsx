@@ -14,6 +14,7 @@ import {
 import SchemaJsonLd from "@/components/SchemaJsonLd";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import PhoneIcon from "@/components/PhoneIcon";
+import HeroBadgeRow from "@/components/HeroBadgeRow";
 import FaqSection from "@/components/content/FaqSection";
 import CtaBand from "@/components/content/CtaBand";
 import HighlightBox from "@/components/content/HighlightBox";
@@ -141,6 +142,25 @@ export default async function BezirkLeistungPage({
             </a>
             <a href="/kontakt" className="btn-outline">Termin anfragen</a>
           </div>
+
+          <HeroBadgeRow />
+        </div>
+      </section>
+
+      {/* Featured Snippet – konkret für diese Bezirk × Leistung */}
+      <section style={{ padding: "56px 0 0", background: "var(--bg)" }}>
+        <div className="container">
+          <FeaturedSnippet
+            question={`${l.featuredQuestion} (für ${b.plz} ${b.shortName})`}
+            answer={
+              <p>
+                {l.shortAnswer} Speziell in {b.plz} {b.shortName} (
+                {b.buildingStyle.slice(0, 2).join(" / ")}) bedeutet das: vertraute
+                Bauepoche, erprobte Materialwahl und kurze Anfahrt von unserem Sitz
+                in {FIRMA.address.postalCode} {FIRMA.address.city}.
+              </p>
+            }
+          />
         </div>
       </section>
 
@@ -311,7 +331,7 @@ export default async function BezirkLeistungPage({
                   <div className="service-magic-card__img">
                     <Image
                       src={other.image}
-                      alt={other.shortTitle}
+                      alt={other.imageAlt ?? `${other.shortTitle} in ${b.shortName} Wien`}
                       fill
                       sizes="(max-width: 960px) 50vw, 33vw"
                       style={{ objectFit: "cover" }}
