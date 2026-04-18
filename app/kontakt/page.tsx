@@ -10,6 +10,7 @@ import HighlightBox from "@/components/content/HighlightBox";
 import FeaturedSnippet from "@/components/content/FeaturedSnippet";
 import EntityCard from "@/components/content/EntityCard";
 import PhoneIcon from "@/components/PhoneIcon";
+import HeroBackground from "@/components/HeroBackground";
 
 export const metadata: Metadata = {
   title: `Kontakt – Installateur Wien anrufen | ${FIRMA.name}`,
@@ -30,6 +31,7 @@ export default function KontaktPage() {
       <SchemaJsonLd schema={schema} />
 
       <section className="leistung-hero">
+        <HeroBackground />
         <div className="container">
           <Breadcrumbs items={breadcrumbs} />
           <p className="section-eyebrow" style={{ color: "white", opacity: 0.7 }}>

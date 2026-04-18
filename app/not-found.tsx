@@ -2,11 +2,13 @@ import Image from "next/image";
 import { FIRMA } from "@/lib/company";
 import { LEISTUNGEN } from "@/lib/leistungen";
 import PhoneIcon from "@/components/PhoneIcon";
+import HeroBackground from "@/components/HeroBackground";
 
 export default function NotFound() {
   return (
     <>
       <section className="leistung-hero">
+        <HeroBackground />
         <div className="container">
           <p className="section-eyebrow" style={{ color: "white", opacity: 0.7 }}>
             Fehler 404

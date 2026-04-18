@@ -12,6 +12,7 @@ import HeroBadgeRow from "@/components/HeroBadgeRow";
 import CtaBand from "@/components/content/CtaBand";
 import HighlightBox from "@/components/content/HighlightBox";
 import FeaturedSnippet from "@/components/content/FeaturedSnippet";
+import HeroBackground from "@/components/HeroBackground";
 
 export const metadata: Metadata = {
   title: `Leistungen Installateur Wien | ${FIRMA.name}`,
@@ -32,6 +33,7 @@ export default function LeistungenPage() {
       <SchemaJsonLd schema={schema} />
 
       <section className="leistung-hero">
+        <HeroBackground />
         <div className="container">
           <Breadcrumbs items={breadcrumbs} />
           <p className="section-eyebrow" style={{ color: "white", opacity: 0.7 }}>

@@ -24,6 +24,7 @@ import IconList from "@/components/content/IconList";
 import MiniStory from "@/components/content/MiniStory";
 
 import { BEZIRK_CONTENT } from "@/content/bezirke";
+import HeroBackground from "@/components/HeroBackground";
 
 export const dynamicParams = false;
 
@@ -73,6 +74,7 @@ export default async function BezirkPage({ params }: { params: Promise<{ slug: s
       <SchemaJsonLd schema={schema} />
 
       <section className="leistung-hero">
+        <HeroBackground />
         <div className="container">
           <Breadcrumbs items={breadcrumbs} />
           <p className="section-eyebrow" style={{ color: "white", opacity: 0.7 }}>

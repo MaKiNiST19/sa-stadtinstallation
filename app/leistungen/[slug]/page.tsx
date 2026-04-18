@@ -26,6 +26,7 @@ import IconList from "@/components/content/IconList";
 
 // Dedizierte Inhalt-Module pro Leistung (handgeschrieben, NICHT generiert)
 import { LEISTUNG_CONTENT } from "@/content/leistungen";
+import HeroBackground from "@/components/HeroBackground";
 
 export const dynamicParams = false;
 
@@ -87,6 +88,7 @@ export default async function LeistungPage({ params }: { params: Promise<{ slug:
       <SchemaJsonLd schema={schema} />
 
       <section className="leistung-hero">
+        <HeroBackground />
         <div className="container">
           <Breadcrumbs items={breadcrumbs} />
           <p className="section-eyebrow" style={{ color: "white", opacity: 0.7 }}>

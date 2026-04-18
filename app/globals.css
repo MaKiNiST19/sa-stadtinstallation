@@ -269,13 +269,22 @@ p  { color: var(--mid); line-height: 1.75; }
 .navbar__icon-btn:hover { background: var(--bg); border-color: #c8cad2; text-decoration: none; }
 .navbar__icon-btn svg { width: 16px; height: 16px; display: block; }
 
-/*    HERO — full-screen image + gradient    */
+/*    HERO — full-screen image + gradient
+      Hintergrundbild kommt jetzt als optimierte next/image (WebP/AVIF,
+      responsive, priority) – hier bleibt nur die Fallback-Farbe.           */
 .hero {
   position: relative;
   height: 95vh;
   min-height: 600px;
   overflow: visible;
-  background: #0b1929 url('/images/installateur-wien.jpg') left center / cover no-repeat;
+  background: #0b1929;
+}
+.hero > .hero__bg-img {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  object-fit: cover;
+  object-position: left center;
 }
 .hero__bg-wrap {
   position: absolute; inset: 0;
@@ -995,9 +1004,11 @@ p  { color: var(--mid); line-height: 1.75; }
   .section--sm { padding: 40px 0 !important; }
 }
 
-/*    Leistung / Bezirk page hero    */
+/*    Leistung / Bezirk page hero
+      Hintergrundbild wird via <HeroBackground /> als optimierte next/image
+      eingebunden (WebP/AVIF, responsive). Hier nur Fallback-Farbe.          */
 .leistung-hero {
-  background: #0b1929 url('/images/installateur-notdienst-wien.jpg') center center / cover no-repeat;
+  background: #0b1929;
   color: var(--white);
   min-height: 64vh;
   display: flex;
@@ -1009,10 +1020,9 @@ p  { color: var(--mid); line-height: 1.75; }
   position: relative;
   overflow: hidden;
 }
-.leistung-hero__bg {
-  position: absolute; inset: 0;
-  opacity: 0.22;
-  object-fit: cover;
+/* next/image rendert absolute; opacity 1, der Gradient (::before) liegt darüber */
+.leistung-hero > img {
+  z-index: 0;
 }
 .leistung-hero::before {
   content: '';

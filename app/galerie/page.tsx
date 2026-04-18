@@ -10,6 +10,7 @@ import PhoneIcon from "@/components/PhoneIcon";
 import GalleryGrid from "@/components/GalleryGrid";
 import CtaBand from "@/components/content/CtaBand";
 import { GALLERY } from "@/lib/gallery";
+import HeroBackground from "@/components/HeroBackground";
 
 export const metadata: Metadata = {
   title: `Galerie – Referenzen | ${FIRMA.name} Wien`,
@@ -37,6 +38,7 @@ export default function GaleriePage() {
       <SchemaJsonLd schema={schema} />
 
       <section className="leistung-hero">
+        <HeroBackground />
         <div className="container">
           <Breadcrumbs items={breadcrumbs} />
           <p className="section-eyebrow" style={{ color: "white", opacity: 0.7 }}>

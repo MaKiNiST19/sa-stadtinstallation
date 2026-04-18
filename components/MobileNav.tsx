@@ -19,6 +19,9 @@ export default function MobileNav() {
       <button
         onClick={() => setOpen(!open)}
         aria-label={open ? "Menü schließen" : "Menü öffnen"}
+        aria-expanded={open}
+        aria-controls="mobile-nav-menu"
+        type="button"
         style={{
           background: open ? "var(--primary)" : "none",
           border: "1.5px solid var(--border)",
@@ -86,6 +89,9 @@ export default function MobileNav() {
       )}
 
       <div
+        id="mobile-nav-menu"
+        aria-hidden={!open}
+        role="menu"
         style={{
           position: "absolute",
           top: "100%",
@@ -100,6 +106,7 @@ export default function MobileNav() {
           transform: open ? "translateY(0)" : "translateY(-20px)",
           opacity: open ? 1 : 0,
           pointerEvents: open ? "all" : "none",
+          visibility: open ? "visible" : "hidden",
           transition: "all 0.4s cubic-bezier(0.16, 1, 0.3, 1)",
           padding: "24px",
           border: "1px solid rgba(0,0,0,0.05)",

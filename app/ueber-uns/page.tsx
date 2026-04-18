@@ -13,6 +13,7 @@ import EntityCard from "@/components/content/EntityCard";
 import MiniStory from "@/components/content/MiniStory";
 import IconList from "@/components/content/IconList";
 import CtaBand from "@/components/content/CtaBand";
+import HeroBackground from "@/components/HeroBackground";
 
 export const metadata: Metadata = {
   title: `Über uns – ${FIRMA.name} | Meisterbetrieb in Wien`,
@@ -36,6 +37,7 @@ export default function UeberUnsPage() {
       <SchemaJsonLd schema={schema} />
 
       <section className="leistung-hero">
+        <HeroBackground />
         <div className="container">
           <Breadcrumbs items={breadcrumbs} />
           <p className="section-eyebrow" style={{ color: "white", opacity: 0.7 }}>

@@ -3,6 +3,7 @@ import { FIRMA } from "@/lib/company";
 import { generateBreadcrumbSchema, combineSchemas } from "@/lib/schema";
 import SchemaJsonLd from "@/components/SchemaJsonLd";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import HeroBackground from "@/components/HeroBackground";
 
 export const metadata: Metadata = {
   title: `Impressum – ${FIRMA.name}`,
@@ -23,6 +24,7 @@ export default function ImpressumPage() {
       <SchemaJsonLd schema={schema} />
 
       <section className="leistung-hero">
+        <HeroBackground />
         <div className="container">
           <Breadcrumbs items={breadcrumbs} />
           <h1 style={{ color: "white", fontSize: "clamp(2rem, 3.6vw, 2.8rem)", fontWeight: 800, margin: 0 }}>

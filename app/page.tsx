@@ -48,6 +48,17 @@ export default function HomePage() {
 
       {/* ===================== HERO ===================== */}
       <section className="hero">
+        <Image
+          src="/images/installateur-wien.jpg"
+          alt=""
+          aria-hidden="true"
+          fill
+          priority
+          fetchPriority="high"
+          sizes="100vw"
+          quality={72}
+          className="hero__bg-img"
+        />
         <div className="hero__overlay" />
         <div className="hero__content container">
           <p className="hero__eyebrow">

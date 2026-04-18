@@ -24,6 +24,7 @@ import IconList from "@/components/content/IconList";
 import MiniStory from "@/components/content/MiniStory";
 
 import { INTERSECTION_CONTENT } from "@/content/intersections";
+import HeroBackground from "@/components/HeroBackground";
 
 export const dynamicParams = false;
 
@@ -106,6 +107,7 @@ export default async function BezirkLeistungPage({
       <SchemaJsonLd schema={schema} />
 
       <section className="leistung-hero">
+        <HeroBackground />
         <div className="container">
           <Breadcrumbs items={breadcrumbs} />
           <p className="section-eyebrow" style={{ color: "white", opacity: 0.7 }}>

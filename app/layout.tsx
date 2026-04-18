@@ -183,7 +183,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </div>
                 <p
                   style={{
-                    color: "rgba(255,255,255,0.65)",
+                    color: "rgba(255,255,255,0.78)",
                     fontSize: "13px",
                     lineHeight: 1.6,
                     margin: 0,
@@ -226,7 +226,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                       <a
                         href={`/leistungen/${l.slug}`}
                         style={{
-                          color: "rgba(255,255,255,0.7)",
+                          color: "rgba(255,255,255,0.82)",
                           fontSize: "13px",
                           textDecoration: "none",
                         }}
@@ -267,7 +267,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                       <a
                         href={`/bezirke/${b.slug}`}
                         style={{
-                          color: "rgba(255,255,255,0.7)",
+                          color: "rgba(255,255,255,0.82)",
                           fontSize: "13px",
                           textDecoration: "none",
                         }}
@@ -329,7 +329,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                         target={item.label === "WKÖ Profil" ? "_blank" : undefined}
                         rel={item.label === "WKÖ Profil" ? "noopener noreferrer" : undefined}
                         style={{
-                          color: "rgba(255,255,255,0.7)",
+                          color: "rgba(255,255,255,0.82)",
                           fontSize: "13px",
                           textDecoration: "none",
                         }}
@@ -374,7 +374,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                       <a
                         href={item.href}
                         style={{
-                          color: "rgba(255,255,255,0.7)",
+                          color: "rgba(255,255,255,0.82)",
                           fontSize: "13px",
                           textDecoration: "none",
                         }}
@@ -426,7 +426,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <div>
                 <p
                   style={{
-                    color: "rgba(255,255,255,0.5)",
+                    color: "rgba(255,255,255,0.72)",
                     fontSize: "10px",
                     fontWeight: 800,
                     textTransform: "uppercase",
@@ -451,7 +451,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <div>
                 <p
                   style={{
-                    color: "rgba(255,255,255,0.5)",
+                    color: "rgba(255,255,255,0.72)",
                     fontSize: "10px",
                     fontWeight: 800,
                     textTransform: "uppercase",
@@ -481,10 +481,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 gap: "16px",
               }}
             >
-              <p style={{ color: "rgba(255,255,255,0.5)", fontSize: "12px", margin: 0 }}>
+              <p style={{ color: "rgba(255,255,255,0.72)", fontSize: "12px", margin: 0 }}>
                 © {new Date().getFullYear()} {FIRMA.legalName}. Alle Rechte vorbehalten.
               </p>
-              <p style={{ color: "rgba(255,255,255,0.5)", fontSize: "12px", margin: 0 }}>
+              <p style={{ color: "rgba(255,255,255,0.72)", fontSize: "12px", margin: 0 }}>
                 Meisterbetrieb · WKÖ-konzessioniert · Google Käuferschutz
               </p>
             </div>

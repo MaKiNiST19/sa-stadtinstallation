@@ -14,6 +14,7 @@ import FeaturedSnippet from "@/components/content/FeaturedSnippet";
 import IconList from "@/components/content/IconList";
 import PhoneIcon from "@/components/PhoneIcon";
 import HeroBadgeRow from "@/components/HeroBadgeRow";
+import HeroBackground from "@/components/HeroBackground";
 
 export const metadata: Metadata = {
   title: `Installateur in allen 23 Wiener Bezirken | ${FIRMA.name}`,
@@ -42,6 +43,7 @@ export default function BezirkePage() {
       <SchemaJsonLd schema={schema} />
 
       <section className="leistung-hero">
+        <HeroBackground />
         <div className="container">
           <Breadcrumbs items={breadcrumbs} />
           <p className="section-eyebrow" style={{ color: "white", opacity: 0.7 }}>
