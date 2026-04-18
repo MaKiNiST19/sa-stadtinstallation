@@ -27,8 +27,7 @@ const nextConfig = {
       { source: '/datenschutz-2', destination: '/datenschutz', permanent: true },
       { source: '/impressum-2', destination: '/impressum', permanent: true },
       // Media / misc
-      { source: '/fotogallerie', destination: '/', permanent: true },
-      { source: '/galerie', destination: '/', permanent: true },
+      { source: '/fotogallerie', destination: '/galerie', permanent: true },
       { source: '/karriere', destination: '/kontakt', permanent: true },
       { source: '/jobs', destination: '/kontakt', permanent: true },
     ];
