@@ -65,6 +65,14 @@ export default function HomePage() {
             <span className="hero__pulse" aria-hidden="true" />
             24h Notdienst · In 30 Min. bei Ihnen
           </p>
+          <div className="mobile-only" style={{ marginBottom: "16px", justifyContent: "center" }}>
+            <RatingBadge
+              title="Meisterbetrieb Wien"
+              subtitle={`${FIRMA.trust.rating.toFixed(1)} ★ · Google verifiziert`}
+              rating={5}
+              theme="light"
+            />
+          </div>
           <h1 className="hero__title">
             Ihr <em>Installateur</em> in Wien – schnell, sauber, fair.
           </h1>

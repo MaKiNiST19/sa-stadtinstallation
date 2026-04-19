@@ -99,7 +99,7 @@ export default function MobileNav() {
           marginTop: "8px",
           width: "auto",
           background: "white",
-          borderRadius: "0 0 16px 16px",
+          borderRadius: "16px",
           boxShadow: "0 20px 50px rgba(0,0,0,0.15)",
           zIndex: 1000,
           overflow: "hidden",
@@ -110,7 +110,6 @@ export default function MobileNav() {
           transition: "all 0.4s cubic-bezier(0.16, 1, 0.3, 1)",
           padding: "20px 16px 24px",
           border: "1px solid rgba(0,0,0,0.05)",
-          borderTop: "none",
         }}
       >
         <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>

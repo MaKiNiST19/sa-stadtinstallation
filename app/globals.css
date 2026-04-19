@@ -948,7 +948,7 @@ p  { color: var(--mid); line-height: 1.75; }
 
 @media (max-width: 640px) {
   .hero h1 { font-size: 1.8rem; }
-  .hero { background-position: center center !important; }
+  .hero > .hero__bg-img { object-position: center center !important; }
   .hero__btns { flex-direction: column; width: 100%; }
   .hero__btns a { width: 100%; }
   .hero__btns .text_button { width: 100%; }
