@@ -214,8 +214,7 @@ export default function HomePage() {
       {/* ===================== Mini-Story / E-E-A-T ===================== */}
       <section style={{ padding: "80px 0", background: "var(--bg)" }}>
         <div
-          className="container"
-          style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "40px" }}
+          className="container story-grid"
         >
           <MiniStory
             title="Frau M., 1020 Leopoldstadt"
